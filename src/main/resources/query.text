@@ -1,0 +1,27 @@
+CREATE TABLE book (
+	isn varchar PRIMARY KEY,
+	title VARCHAR ( 50 )  NOT NULL,
+	publisher VARCHAR ( 50 ) NOT NULL,
+	authors VARCHAR ( 255 )  NOT NULL,
+	publisheddate varchar NOT NULL
+);
+INSERT INTO book(isn, title,publisher,authors,publisheddate)
+VALUES ('1234','Book Of Clouds 1','Kindle of Edition','prabhakaran','2021-05-16');
+
+
+
+----------------****************------------------
+
+{
+   allBooks {
+        isn
+        title
+        publisher
+        author
+    }
+    book(id : "1234"){
+        isn
+        title
+        publishedDate
+    }
+}

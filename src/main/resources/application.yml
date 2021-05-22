@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    driverClassName: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: ********
+
+server:
+  error:
+    include-stacktrace: always
+  servlet:
+    contextPath: /prabha
+  port: 8085
